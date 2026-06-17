@@ -63,3 +63,24 @@ const myNum2 = 123;
 const myString2 = String(myNum2);
 console.log(typeof myString2);
 // string
+
+//Arrays
+
+const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+console.log(shopping [0]);  
+//console.log(shopping.length);  //5
+//console.log(shopping[0]);      //result "bread"
+//shopping[0] = "tahini"         //replaces "bread" with "tahini"
+
+const random = ["tree", 795, [0, 1, 2]];
+console.log(random);
+
+
+const removeFromArray = function(newArray) {
+  const array = [1,2,3,4];
+  // const newArray = array.indexOf([3]);
+  if (newArray !== -1) {
+    array.splice(newArray, 2);
+  }   
+};
+console.log(removeFromArray);
