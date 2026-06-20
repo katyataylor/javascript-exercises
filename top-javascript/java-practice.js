@@ -75,12 +75,40 @@ console.log(shopping [0]);
 const random = ["tree", 795, [0, 1, 2]];
 console.log(random);
 
+//use indexOf() to find the index number of array item. if not in array indexOf returns -1
+const birds = ["Parrot", "Falcon", "Owl"];
+console.log(birds.indexOf("Owl")); //  2
+console.log(birds.indexOf("Rabbit")); // -1
 
-const removeFromArray = function(newArray) {
-  const array = [1,2,3,4];
-  // const newArray = array.indexOf([3]);
-  if (newArray !== -1) {
-    array.splice(newArray, 2);
-  }   
+//push() to add items to index. unshift() to add to beginning of array
+// const cities = ["Manchester", "Liverpool"];
+// cities.push("Cardiff");
+// console.log(cities); // [ "Manchester", "Liverpool", "Cardiff" ]
+// cities.push("Bradford", "Brighton");
+// console.log(cities); // [ "Manchester", "Liverpool", "Cardiff", "Bradford", "Brighton" ]
+
+// //pop() to remove from array, shift() to remove first array item.
+// const cities = ["Manchester", "Liverpool"];
+// cities.pop();
+// console.log(cities); // [ "Manchester" ]
+
+// const cities = ["Manchester", "Liverpool"];
+// const removedCity = cities.pop();
+// console.log(removedCity); // "Liverpool"
+
+// const cities = ["Manchester", "Liverpool"];
+// cities.shift();
+// console.log(cities); // [ "Liverpool" ]
+
+//splice() to remove if you know indexOf item
+const cities = ["Manchester", "Liverpool", "Edinburgh", "Carlisle"];
+const index = cities.indexOf("Liverpool");
+if (index !== -1) {
+  cities.splice(index, 1);
+}
+console.log(cities); // [ "Manchester", "Edinburgh", "Carlisle" ]
+
+const removeFromArray = function() {
+  
 };
 console.log(removeFromArray);
