@@ -109,6 +109,7 @@ if (index !== -1) {
 console.log(cities); // [ "Manchester", "Edinburgh", "Carlisle" ]
 
 const removeFromArray = function() {
+  const newArray = 
   
 };
 console.log(removeFromArray);
