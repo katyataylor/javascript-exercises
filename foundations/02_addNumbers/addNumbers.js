@@ -4,7 +4,7 @@ function addNumbers() {
 
   let result;
 
-  result = a + b; // <------ removed "" from variables making them numbers, not strings
+  result = "a" + "b"; // <------ EDIT THIS LINE
 
   return result;
 }
